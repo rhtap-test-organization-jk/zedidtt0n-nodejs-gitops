@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: zedidtt0n-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: zedidtt0n-nodejs 
+  name: zedidtt0n-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: zedidtt0n-nodejs 
